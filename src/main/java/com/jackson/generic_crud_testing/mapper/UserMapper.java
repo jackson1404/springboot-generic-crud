@@ -22,4 +22,10 @@ public class UserMapper implements Mapper<UserEntity, UserDto> {
         userDto.setUserEmail(entity.getUserEmail());
         return userDto;
     }
+
+    @Override
+    public void updateEntityFromDto(UserEntity entity, UserDto dto) {
+        entity.setUserName(dto.getUserName());
+        entity.setUserEmail(dto.getUserEmail());
+    }
 }

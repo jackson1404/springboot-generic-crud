@@ -45,7 +45,9 @@ public abstract class BaseCrudService<E, D, ID> implements CrudService<E, D, ID>
         E entity = repository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Not Found"));
 
+        mapper.updateEntityFromDto(entity, dto);
 
+        return mapper.toDto(repository.save(entity));
 
 
     }
