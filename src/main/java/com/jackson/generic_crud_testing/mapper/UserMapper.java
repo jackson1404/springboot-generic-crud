@@ -6,4 +6,20 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class UserMapper implements Mapper<UserEntity, UserDto> {
+
+    @Override
+    public UserEntity toEntity(UserDto dto) {
+        UserEntity user = new UserEntity();
+        user.setUserName(dto.getUserName());
+        user.setUserEmail(dto.getUserEmail());
+        return user;
+    }
+
+    @Override
+    public UserDto toDto(UserEntity entity) {
+        UserDto userDto = new UserDto();
+        userDto.setUserName(entity.getUserName());
+        userDto.setUserEmail(entity.getUserEmail());
+        return userDto;
+    }
 }
