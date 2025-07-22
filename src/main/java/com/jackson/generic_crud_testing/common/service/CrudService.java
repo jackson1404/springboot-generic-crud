@@ -1,4 +1,4 @@
-package com.jackson.generic_crud_testing.service;
+package com.jackson.generic_crud_testing.common.service;
 
 import java.util.List;
 

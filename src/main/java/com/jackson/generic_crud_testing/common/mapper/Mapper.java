@@ -1,4 +1,4 @@
-package com.jackson.generic_crud_testing.mapper;
+package com.jackson.generic_crud_testing.common.mapper;
 
 public interface Mapper<E, D> {
     E toEntity(D dto);

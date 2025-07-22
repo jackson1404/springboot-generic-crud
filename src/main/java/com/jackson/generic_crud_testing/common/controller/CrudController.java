@@ -1,6 +1,6 @@
-package com.jackson.generic_crud_testing.controller;
+package com.jackson.generic_crud_testing.common.controller;
 
-import com.jackson.generic_crud_testing.service.CrudService;
+import com.jackson.generic_crud_testing.common.service.CrudService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

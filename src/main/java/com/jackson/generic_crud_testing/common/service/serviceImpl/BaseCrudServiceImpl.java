@@ -1,20 +1,18 @@
-package com.jackson.generic_crud_testing.service;
+package com.jackson.generic_crud_testing.common.service.serviceImpl;
 
-import com.jackson.generic_crud_testing.mapper.Mapper;
-import lombok.RequiredArgsConstructor;
+import com.jackson.generic_crud_testing.common.mapper.Mapper;
+import com.jackson.generic_crud_testing.common.service.CrudService;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
-public abstract class BaseCrudService<E, D, ID> implements CrudService<E, D, ID>{
+public abstract class BaseCrudServiceImpl<E, D, ID> implements CrudService<E, D, ID> {
 
     protected final JpaRepository<E, ID> repository;
     protected final Mapper<E, D> mapper;
 
-    public BaseCrudService(JpaRepository<E, ID> repository, Mapper<E, D> mapper) {
+    public BaseCrudServiceImpl(JpaRepository<E, ID> repository, Mapper<E, D> mapper) {
         this.repository = repository;
         this.mapper = mapper;
     }
