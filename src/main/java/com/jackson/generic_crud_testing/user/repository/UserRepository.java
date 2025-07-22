@@ -1,6 +1,6 @@
-package com.jackson.generic_crud_testing.repository;
+package com.jackson.generic_crud_testing.user.repository;
 
-import com.jackson.generic_crud_testing.model.UserEntity;
+import com.jackson.generic_crud_testing.user.model.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

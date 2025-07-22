@@ -1,4 +1,4 @@
-package com.jackson.generic_crud_testing.dto;
+package com.jackson.generic_crud_testing.user.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

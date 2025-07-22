@@ -1,4 +1,4 @@
-package com.jackson.generic_crud_testing.model;
+package com.jackson.generic_crud_testing.user.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,8 +1,8 @@
-package com.jackson.generic_crud_testing.mapper;
+package com.jackson.generic_crud_testing.user.mapper;
 
 import com.jackson.generic_crud_testing.common.mapper.Mapper;
-import com.jackson.generic_crud_testing.dto.UserDto;
-import com.jackson.generic_crud_testing.model.UserEntity;
+import com.jackson.generic_crud_testing.user.dto.UserDto;
+import com.jackson.generic_crud_testing.user.model.UserEntity;
 import org.springframework.stereotype.Component;
 
 @Component
