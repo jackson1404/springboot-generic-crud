@@ -22,16 +22,26 @@ public class OrderMapper implements Mapper<OrderEntity, OrderDto> {
 
     @Override
     public OrderEntity toEntity(OrderDto dto) {
-        return null;
+        OrderEntity order = new OrderEntity();
+        order.setOrderNo(dto.getOrderNo());
+        order.setOrderAmount(dto.getOrderAmount());
+        order.setOrderQuantity(dto.getOrderQuantity());
+        return order;
     }
 
     @Override
     public OrderDto toDto(OrderEntity entity) {
-        return null;
+        OrderDto orderDto = new OrderDto();
+        orderDto.setOrderAmount(entity.getOrderAmount());
+        orderDto.setOrderQuantity(entity.getOrderQuantity());
+        orderDto.setOrderNo(entity.getOrderNo());
+        return orderDto;
     }
 
     @Override
     public void updateEntityFromDto(OrderEntity entity, OrderDto dto) {
-
+        entity.setOrderQuantity(dto.getOrderQuantity());
+        entity.setOrderNo(dto.getOrderNo());
+        entity.setOrderAmount(dto.getOrderAmount());
     }
 }
