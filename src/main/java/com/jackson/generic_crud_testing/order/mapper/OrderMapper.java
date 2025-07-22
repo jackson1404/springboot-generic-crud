@@ -9,6 +9,7 @@ package com.jackson.generic_crud_testing.order.mapper;
 import com.jackson.generic_crud_testing.common.mapper.Mapper;
 import com.jackson.generic_crud_testing.order.dto.OrderDto;
 import com.jackson.generic_crud_testing.order.model.OrderEntity;
+import org.springframework.stereotype.Component;
 
 /**
  * OrderMapper Class.
@@ -17,7 +18,7 @@ import com.jackson.generic_crud_testing.order.model.OrderEntity;
  *
  * @author
  */
-
+@Component
 public class OrderMapper implements Mapper<OrderEntity, OrderDto> {
 
     @Override
